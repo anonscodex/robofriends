@@ -1,15 +1,24 @@
 import React from "react";
+import Card from "./Card";
 
+const CardList = ({portfolio}) => {
 
-import { portfolio } from "./Portfolio";
+    const cardComponent = portfolio.map((user, i) => {
+        return( <Card
+         key= {i} 
+         name={portfolio[i].name} 
+         stack={portfolio[i].stack}
+           /> )
+    })
 
-const cardList = ({portfolio}) => {
-    <div>
-        <Card name={portfolio[0].name} stack={portfolio[0].stack}  />
-        <Card name={portfolio[1].name} stack={portfolio[1].stack} />
-        <Card name={portfolio[2].name} stack={portfolio[2].stack} />
-        <Card name={portfolio[3].name} stack={portfolio[3].stack} />
-    </div>
+    
+    return(
+
+        <div>
+            {cardComponent}
+        </div>
+    );
 }
 
-export default cardList
+
+export default CardList
