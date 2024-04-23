@@ -13,7 +13,9 @@ const Card = ({name, stack}) => {
                         <p className="text-white mt-2">{stack}</p>
 
                         <div className="py-5">
+                            
                             <button class="px-4 py-1 text-sm text-white font-semibold rounded-full border border-green-200 hover:text-white hover:bg-green-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2">Message</button>
+                            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="github" className="bg-color-white"/>
                         </div>
                     </div>
     

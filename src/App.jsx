@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import {portfolio} from './Portfolio.jsx'
 import CardList from './CardList.jsx'
 import Header from "./Header.jsx";
+import Footer from "./footer.jsx";
 
 
 
@@ -32,7 +33,10 @@ class App extends Component {
         return (
                 <div>
                     <Header searchChange={this.onSearchChange}/>
+                    
                     <CardList portfolio ={filteredPortfolio}/>
+                    
+                    <Footer />
                 </div>
         )
 } 
